@@ -98,28 +98,6 @@ for i = 1:size_ev
 
     dur_num = dur_num + dur(i,1);
 end
-% % constraint  : peak price 찾기
-%     
-%     % X_t 양 확인하기
-% for i = 1:size_ev
-%     for j = 1:hour
-%         if ev_day(i,8) <= j && j <= ev_day(i,9)
-%         ev_check(i,j) = 1;
-%         var_hours(j,1) = var_hours(j,1) + 1;
-%         end
-%     end    
-% end
-% dur_num = 1;
-% ev_hour = 0;
-% for i = 1:size_ev
-%     for j = 1:hour
-%         if ev(i,8) <= j && j <= ev(i,9)
-%             ev_hour = j-ev(i,8);
-%              A(1,dur_num + ev_hour) = 1;
-%         end
-%     end
-%     ev_hour
-% end
 
 %최적화
 intcon = 1:obj_N;
